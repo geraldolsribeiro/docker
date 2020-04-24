@@ -10,7 +10,7 @@ shellcheck:
 build: build-debian build-alpine build-slim build-jdk11 build-centos build-openj9 build-openj9-jdk11
 
 build-debian:
-	docker build --file Dockerfile .
+	docker build --file Dockerfile . -t jenkins-with-docker-inside
 
 build-alpine:
 	docker build --file Dockerfile-alpine .
